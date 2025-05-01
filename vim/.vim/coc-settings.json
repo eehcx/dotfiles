@@ -1,0 +1,12 @@
+{
+    "suggest.noselect": false,
+    "suggest.timeout": 500,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "typescript",
+        "html",
+        "css",
+        "json",
+        "python"
+    ]
+}
