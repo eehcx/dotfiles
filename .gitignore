@@ -1,0 +1,7 @@
+# .gitignore de dotfiles
+*.swp
+*.log
+*.cache
+plugged/
+secrets/            # Carpeta con datos sensibles (no subir!)
+.env                # Variables de entorno
