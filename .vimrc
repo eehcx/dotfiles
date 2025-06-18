@@ -7,9 +7,15 @@ call plug#begin('~/.vim/plugged')       " plugin manager init
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox' 
+" Soporte mejorado para yank/copy
+Plug 'ojroques/vim-oscyank'
+" Mejora el portapapeles entre terminal/tmux
+Plug 'christoomey/vim-system-copy'
+Plug 'github/copilot.vim'
 
 
 call plug#end()                         " plugins section ended
+
 
 " ====== GENERAL CONFIG ======
 
@@ -37,6 +43,8 @@ highlight Normal guibg=NONE ctermbg=NONE
 highlight NonText guibg=NONE ctermbg=NONE
 highlight LineNr guibg=NONE ctermbg=NONE
 
+vnoremap <C-c> "+y
+
 
 " ====== SCRIPTS ======
 
@@ -51,3 +59,14 @@ endif
 
 let mapleader = " "
 nnoremap <leader>n :NERDTreeToggle<CR>
+
+
+" ===== GITHUB COPILOT =====
+
+
+autocmd FileType markdown,text,python,js,ts,tsx,jsx,html,css,sh,zsh,rust,cpp,c Copilot enable
+
+" Map <leader>c para activar/desactivar GitHub Copilot
+
+
+
