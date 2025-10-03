@@ -1,5 +1,5 @@
 call plug#begin('~/.vim/plugged')       " plugin manager init
-                                     
+
 
 " ====== PLUGINS ======
 
