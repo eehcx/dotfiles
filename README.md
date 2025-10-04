@@ -2,8 +2,6 @@
 title: eehcx dotfiles
 description: My personal dotfiles configuration for Hyprland, GVim, Waybar and Wofi
 author: eehcx
-tags: [dotfiles, hyprland, waybar, wofi, gvim, linux, wayland]
-repository: https://github.com/eehcx/dotfiles
 platforms: [linux]
 ---
 
@@ -74,4 +72,12 @@ Also _I use hyprland btw_ so there are my **setup**:
 
 Don't use my settings blindly unless you understand the implications. **Use at your own risk!**
 
+### Quick Installation
 
+```shell
+git clone https://github.com/eehcx/dotfiles.git
+cd dotfiles
+./install.sh
+```
+
+> **💡 INFO**: _Installation with Arch + Debian/Ubuntu support_
